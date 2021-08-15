@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
 export const AudioSpinnerContainer = styled.div`
-color: #ecf0f1;
+color: aqua;
+font-size: 100px;
+margin: 15px;
+.fas{
+  transition: .3s all;
+}
+.fas:hover{
+  font-size: 110%;
+}
 .rotate{
   animation: rotation 2s infinite linear;
 }
