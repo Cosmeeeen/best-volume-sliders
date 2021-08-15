@@ -1,4 +1,4 @@
-import AudioPlayer from "./Components/AudioPlayer/AudioPlayer";
+import AudioPlayer from "./Components/AudioPlayer/index";
 import GlobalStyle from "./globalStyles";
 
 function App() {
