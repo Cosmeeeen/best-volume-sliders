@@ -1,10 +1,11 @@
+import AudioPlayer from "./Components/AudioPlayer/index";
 import GlobalStyle from "./globalStyles";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <h1>Hello React!</h1>
+      <AudioPlayer />
     </div>
   );
 }
