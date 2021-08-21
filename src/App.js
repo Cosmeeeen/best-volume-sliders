@@ -2,7 +2,7 @@ import React from 'react';
 import AudioPlayer from "./Components/AudioPlayer/index";
 import GlobalStyle from "./globalStyles";
 
-import NumberInputSlider from "./Components/Sliders/NumberInputSlider";
+import NumberInputSlider from "./Components/Sliders/BasicButtonControls";
 
 function App() {
   const [volume, setVolume] = React.useState(50);
