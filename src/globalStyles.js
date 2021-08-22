@@ -4,6 +4,7 @@ import * as theme from './Themes/default.json';
 
 const GlobalStyle = createGlobalStyle`
   *{
+    font-family: 'Urbanist', sans-serif;
     margin: 0;
     padding: 0;
   }
