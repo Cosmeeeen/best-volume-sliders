@@ -1,6 +1,7 @@
 import React from 'react';
-import AudioPlayer from "./Components/AudioPlayer/index";
 import GlobalStyle from "./globalStyles";
+import AudioPlayer from "./Components/AudioPlayer/index";
+import VolumeBar from './Components/VolumeBar';
 
 import NumberInputSlider from "./Components/Sliders/BasicButtonControls";
 
@@ -12,6 +13,7 @@ function App() {
       <GlobalStyle />
       <AudioPlayer volume={volume}/>
       <NumberInputSlider volume={volume} setVolume={setVolume}/>
+      <VolumeBar volume={volume}/>
     </div>
   );
 }

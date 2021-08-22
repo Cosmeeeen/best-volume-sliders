@@ -19,7 +19,6 @@ const NumberInputSlider = ({volume, setVolume}) => {
 
   return (
     <NumberInputSliderContainer>
-      <h3>Current volume is: {volume}</h3>
       <Button type="button" onClick={increaseVolume}>Increase volume</Button>
       <Button type="button" onClick={decreaseVolume}>Decrease volume</Button>
     </NumberInputSliderContainer>
