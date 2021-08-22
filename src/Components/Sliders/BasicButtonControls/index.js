@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../../Common/Styled/Button/index.styled';
 import NumberInputSliderContainer from './index.style';
 
 const NumberInputSlider = ({volume, setVolume}) => {
@@ -19,8 +20,8 @@ const NumberInputSlider = ({volume, setVolume}) => {
   return (
     <NumberInputSliderContainer>
       <h3>Current volume is: {volume}</h3>
-      <button type="button" onClick={increaseVolume}>Increase volume</button>
-      <button type="button" onClick={decreaseVolume}>Decrease volume</button>
+      <Button type="button" onClick={increaseVolume}>Increase volume</Button>
+      <Button type="button" onClick={decreaseVolume}>Decrease volume</Button>
     </NumberInputSliderContainer>
   );
 };

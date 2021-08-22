@@ -16,8 +16,7 @@ const AudioPlayer = ({volume}) => {
   }, [playing]);
 
   useEffect(() => {
-    if(playing)
-      audio.current.volume = volume / 100;
+    audio.current.volume = volume / 100;
   }, [volume, playing]);
 
   return (

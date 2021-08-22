@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import * as theme from '../../Themes/default.json';
 
 export const AudioSpinnerContainer = styled.div`
-color: ${theme.color.highlight};
+color: ${theme.color.normal};
 font-size: 100px;
 margin: 15px;
 .fas{
@@ -10,7 +10,7 @@ margin: 15px;
 }
 .fas:hover{
   font-size: 90%;
-  color: ${theme.color.normal}
+  color: ${theme.color.highlight}
 }
 .rotate{
   animation: rotation 2s infinite linear;
