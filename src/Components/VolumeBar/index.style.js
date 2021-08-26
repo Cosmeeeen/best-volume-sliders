@@ -13,22 +13,22 @@ export const VolumeBarContainer = styled.div`
   justify-content: flex-end;
   flex-direction: column;
 
-  & p{
+  & p {
     color: ${theme.color.normal};
     font-size: 24px;
   }
 
-  & progress{
+  & progress {
     appearance: none;
     width: 100%;
     height: 10px;
   }
 
-  & progress::-webkit-progress-bar{
+  & progress::-webkit-progress-bar {
     background-color: transparent;
   }
 
-  & progress::-webkit-progress-value{
+  & progress::-webkit-progress-value {
     background-color: ${theme.color.normal};
   }
 `;

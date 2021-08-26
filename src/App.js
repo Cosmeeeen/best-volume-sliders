@@ -1,9 +1,10 @@
 import React from 'react';
-import GlobalStyle from "./globalStyles";
-import AudioPlayer from "./Components/AudioPlayer/index";
+import GlobalStyle from './globalStyles';
+import AudioPlayer from './Components/AudioPlayer/index';
 import VolumeBar from './Components/VolumeBar';
+import NormalVolumeSlider from './Components/Sliders/NormalVolumeSlider';
 
-import NumberInputSlider from "./Components/Sliders/BasicButtonControls";
+import NumberInputSlider from './Components/Sliders/BasicButtonControls';
 
 function App() {
   const [volume, setVolume] = React.useState(50);
@@ -11,9 +12,10 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <AudioPlayer volume={volume}/>
-      <NumberInputSlider volume={volume} setVolume={setVolume}/>
-      <VolumeBar volume={volume}/>
+      <AudioPlayer volume={volume} />
+      <NumberInputSlider volume={volume} setVolume={setVolume} />
+      <NormalVolumeSlider volume={volume} setVolume={setVolume} />
+      <VolumeBar volume={volume} />
     </div>
   );
 }

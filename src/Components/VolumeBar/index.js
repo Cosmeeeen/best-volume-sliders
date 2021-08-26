@@ -1,5 +1,7 @@
 import React from 'react';
-import {VolumeBarContainer} from './index.style';
+import PropTypes from 'prop-types';
+
+import { VolumeBarContainer } from './index.style';
 
 const VolumeBar = ({ volume }) => {
   return (
@@ -8,6 +10,10 @@ const VolumeBar = ({ volume }) => {
       <p>{volume}</p>
     </VolumeBarContainer>
   );
+};
+
+VolumeBar.propTypes = {
+  volume: PropTypes.number,
 };
 
 export default VolumeBar;

@@ -16,8 +16,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --fix",
+    "prettier-write": "prettier --write .",
+    "git-add": "git add ."
   },
+  "pre-commit": [
+    "prettier-write",
+    "lint",
+    "git-add"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -35,5 +43,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.24.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.3.2"
   }
 }
