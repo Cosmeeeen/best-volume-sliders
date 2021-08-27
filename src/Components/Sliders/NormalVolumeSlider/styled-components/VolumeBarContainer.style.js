@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const VolumeBarContainer = styled.div`
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default VolumeBarContainer;

@@ -6,7 +6,6 @@ import { VolumeBarContainer } from './styled-components';
 const NormalVolumeSlider = ({ volume, setVolume }) => {
   return (
     <VolumeBarContainer>
-      <h1>This is the volume bar container</h1>
       <input
         type="range"
         min={0}

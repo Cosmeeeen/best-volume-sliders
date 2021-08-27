@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Button from '../../Common/Styled/Button/index.styled';
-import NumberInputSliderContainer from './index.style';
+import BasicButtonControlsContainer from './index.style';
 
-const NumberInputSlider = ({ volume, setVolume }) => {
+const BasicButtonControls = ({ volume, setVolume }) => {
   const increaseVolume = React.useCallback(() => {
     if (window.confirm('Are you sure you want to increase the volume?')) {
       setVolume(volume + 1);
@@ -18,20 +18,20 @@ const NumberInputSlider = ({ volume, setVolume }) => {
   }, [volume, setVolume]);
 
   return (
-    <NumberInputSliderContainer>
+    <BasicButtonControlsContainer>
       <Button type="button" onClick={increaseVolume}>
         Increase volume
       </Button>
       <Button type="button" onClick={decreaseVolume}>
         Decrease volume
       </Button>
-    </NumberInputSliderContainer>
+    </BasicButtonControlsContainer>
   );
 };
 
-NumberInputSlider.propTypes = {
+BasicButtonControls.propTypes = {
   volume: PropTypes.bool,
   setVolume: PropTypes.func,
 };
 
-export default NumberInputSlider;
+export default BasicButtonControls;
