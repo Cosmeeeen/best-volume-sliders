@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import * as theme from '../../../Themes/default.json';
 
-const NumberInputSliderContainer = styled.div`
+const BasicButtonControlsContainer = styled.div`
   background-color: ${theme.color.background};
   color: ${theme.color.normal};
   display: flex;
@@ -10,4 +10,4 @@ const NumberInputSliderContainer = styled.div`
   flex-direction: column;
 `;
 
-export default NumberInputSliderContainer;
+export default BasicButtonControlsContainer;

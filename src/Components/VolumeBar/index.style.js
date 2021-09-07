@@ -12,23 +12,35 @@ export const VolumeBarContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
+  background: transparent;
 
-  & p{
+  & p {
     color: ${theme.color.normal};
     font-size: 24px;
   }
 
-  & progress{
+  & progress {
     appearance: none;
     width: 100%;
     height: 10px;
   }
 
-  & progress::-webkit-progress-bar{
-    background-color: transparent;
+  // Webkit configuration
+
+  & progress::-webkit-progress-bar {
+    background: transparent;
   }
 
-  & progress::-webkit-progress-value{
-    background-color: ${theme.color.normal};
+  & progress::-webkit-progress-value {
+    background: ${theme.color.normal};
   }
+
+  // Mozilla configuration
+
+  & progress::-moz-progress-bar {
+    background: transparent;
+  }
+
+  // This is where IE configuration would go if I had what to test it on :|
+  // (But tbh who even uses IE anymore)
 `;

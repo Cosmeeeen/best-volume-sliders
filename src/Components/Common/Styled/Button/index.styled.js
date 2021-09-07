@@ -12,11 +12,11 @@ const Button = styled.button`
   border: 2px solid ${theme.color.normal};
   border-radius: 5px;
 
-  transition: .3s all;
+  transition: 0.3s all;
 
   cursor: pointer;
 
-  :hover{
+  :hover {
     background-color: ${theme.color.background};
     color: ${theme.color.highlight};
     border: 2px solid ${theme.color.highlight};
