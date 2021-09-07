@@ -4,7 +4,7 @@ import AudioPlayer from './Components/AudioPlayer/index';
 import VolumeBar from './Components/VolumeBar';
 import NormalVolumeSlider from './Components/Sliders/NormalVolumeSlider';
 
-import BasicButtonControls from './Components/Sliders/BasicButtonControls';
+// import BasicButtonControls from './Components/Sliders/BasicButtonControls';
 
 function App() {
   const [volume, setVolume] = React.useState(50);
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <AudioPlayer volume={volume} />
-      <BasicButtonControls volume={volume} setVolume={setVolume} />
+      {/* <BasicButtonControls volume={volume} setVolume={setVolume} /> */}
       <NormalVolumeSlider volume={volume} setVolume={setVolume} />
       <VolumeBar volume={volume} />
     </div>

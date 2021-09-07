@@ -1,3 +1,4 @@
 import VolumeBarContainer from './VolumeBarContainer.style';
+import Slider from './Slider';
 
-export { VolumeBarContainer };
+export { VolumeBarContainer, Slider };

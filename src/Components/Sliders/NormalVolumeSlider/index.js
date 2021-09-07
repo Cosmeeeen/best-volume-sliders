@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VolumeBarContainer } from './styled-components';
+import { VolumeBarContainer, Slider } from './styled-components';
 
 const NormalVolumeSlider = ({ volume, setVolume }) => {
   return (
     <VolumeBarContainer>
-      <input
+      <Slider
         type="range"
         min={0}
         max={100}
         value={volume}
         onChange={e => {
-          setVolume(e.target.value);
+          setVolume(parseInt(e.target.value));
         }}
       />
     </VolumeBarContainer>
