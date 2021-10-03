@@ -24,7 +24,7 @@ const formatSliderName = sliderName => {
 };
 
 const PageSelector = () => {
-  const [displayMenu, setDisplayMenu] = React.useState(true);
+  const [displayMenu, setDisplayMenu] = React.useState(false);
   const [activeSlider, setActiveSlider] = React.useState('Normal Slider');
 
   const { pathname } = useLocation();
